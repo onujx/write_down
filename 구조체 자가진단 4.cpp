@@ -10,7 +10,7 @@ struct point
 
 void p_input(struct point &p)
 {
-	scanf("%lf %lf %lf", &p.x, &p.y, &p.z);
+	scanf("%lf %lf", &p.x, &p.y);
 }
 
 struct point center(struct point a, struct point b, struct point c)
@@ -31,12 +31,9 @@ int main()
 {
 	p_input(p1);
 	p_input(p2);
-	p_input(p3);
+	p_input(p3); 
 	p4 = center(p1, p2, p3);
 	p_output(p4);
 	
 	return 0; 
 }
-
-
-/// why 
